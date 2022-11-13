@@ -4,182 +4,356 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOURS</title>
     <link rel="stylesheet" href="./ProtoType.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<title>HOURS</title>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+	
+
 </head>
+
+
+
+
 <body>
     <h1>수원역</h1>
     <hr>
-
-   <form>
-       <h3>출발</h3>
-       <select name = "Station">
-          <option value = "1번 출구" selected>1번 출구</option>
-          <option value = "2번 출구">2번 출구</option>
-          <option value = "3번 출구">3번 출구</option>
-       </select>
-    </form>
-
-
-
-
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>
+		출발    <font size="4pt">⇋</font>    도착
+	</h3>
     <form>
-        <h3>도착</h3>
-       <select name = "Facilities">
-          <option value = "편의점" selected>편의점</option>
-          <option value = "화장실">화장실</option>
-       </select>
-        
+		<center>
+       		<select id = "Station">
+				<option value="default" selected> 출구를 선택하세요</option>
+          		<option  value = "place1">수원역홀</option>
+          		<option  value = "place2">환승 센터</option>
+          		
+       		</select>
+			<label>&nbsp&nbsp&nbsp&nbsp&nbsp⇀&nbsp&nbsp&nbsp&nbsp</label>
+			
+       		<select id = "Facilities">
+				<option value ="default" selected>편의시설을 선택하세요</option>
+				<option value = "form1">7번 출구</option>
+				<option value = "form2">화장실</option>
+	 		</select>
+		</center>
     </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-   
-<hr>
-    
+
+<div class="swiper form1 box"> 
+		<div class="swiper-wrapper">
+        <div class="swiper-slide">
+			
+			
+          
+            <div  class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\1.jpg" alt="">
+			
+			
+			</div>
+        </div>
+        <div class="swiper-slide">
+		
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\2.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\3.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\4.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\5.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\6.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\7.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\8.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\9.jpg" alt="">
+			
+			
+			</div>
+		</div>
+		
+		<div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\10.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		<div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\11.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		<div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\12.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		<div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\13.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		<div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\14.jpg" alt="">
+			
+			
+			</div>
+        </div>
+     </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
 
 
-<div class="slidebox">
-	<h1>7번 출구</h1>
-	<input type="radio" name="slide" id="slide01" checked>
-	<input type="radio" name="slide" id="slide02">
-	<input type="radio" name="slide" id="slide03">
-	<input type="radio" name="slide" id="slide04">
-	<input type="radio" name="slide" id="slide05">
-	<input type="radio" name="slide" id="slide06">
-	<input type="radio" name="slide" id="slide07">
-	<input type="radio" name="slide" id="slide08">
-	<input type="radio" name="slide" id="slide09">
-	<input type="radio" name="slide" id="slide10">
-	<input type="radio" name="slide" id="slide11">
-	<input type="radio" name="slide" id="slide12">
-	<input type="radio" name="slide" id="slide13">
-	<input type="radio" name="slide" id="slide14">
+<br>
+<br>
+
+
+
+	<div class="swiper form2 box">
+		<div class="swiper-wrapper">
+        <div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\화장실1.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		
+		
+		<div class="swiper-slide">
+		
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\화장실2.jpg" alt="">
+			
+			
+			</div>
+		</div>
+        <div class="swiper-slide">
+			 <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\화장실3.jpg" alt="">
+			
+			
+			</div>
+		</div>
+		
+		 <div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\화장실4.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		 <div class="swiper-slide">
+          
+            <div class="text-wrap">
+              
+                
+            <img src="C:\Users\태고미\Desktop\prototype\화장실5.jpg" alt="">
+			
+			
+			</div>
+        </div>
+		
+		
 	
-	<ul class="slidelist">
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\1.jpg"></a>
-		</li>
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\2.jpg"></a>
-		</li>
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\3.jpg"></a>
-		</li>
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\4.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\5.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\6.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\7.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\8.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\9.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\10.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\11.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\12.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\13.jpg"></a>
-		</li>
-		
-		<li class="slideitem">
-			<a><img src="C:\Users\태고미\Desktop\HOURS Project-GitRepo\출구\14.jpg"></a>
-		</li>
-		
-	</ul>
-	<div class="slide-control">
-		<div class="control01">
-			<label for="slide01" class="prev"></label>
-			<label for="slide02" class="next"></label>
-		</div>
-		<div class="control02">
-			<label for="slide02" class="prev"></label>
-			<label for="slide03" class="next"></label>
-		</div>
-		<div class="control03">
-			<label for="slide03" class="prev"></label>
-			<label for="slide04" class="next"></label>
-		</div>
-		<div class="control04">
-			<label for="slide04" class="prev"></label>
-			<label for="slide05" class="next"></label>
-		</div>
-		
-		<div class="control05">
-			<label for="slide05" class="prev"></label>
-			<label for="slide06" class="next"></label>
-		</div>
-		
-		<div class="control06">
-			<label for="slide06" class="prev"></label>
-			<label for="slide07" class="next"></label>
-		</div>
-		
-		<div class="control07">
-			<label for="slide07" class="prev"></label>
-			<label for="slide08" class="next"></label>
-		</div>
-		
-		<div class="control08">
-			<label for="slide08" class="prev"></label>
-			<label for="slide09" class="next"></label>
-		</div>
-		
-		<div class="control09">
-			<label for="slide09" class="prev"></label>
-			<label for="slide10" class="next"></label>
-		</div>
-		
-		<div class="control10">
-			<label for="slide10" class="prev"></label>
-			<label for="slide11" class="next"></label>
-		</div>
-		
-		<div class="control11">
-			<label for="slide11" class="prev"></label>
-			<label for="slide12" class="next"></label>
-		</div>
-		
-		<div class="control12">
-			<label for="slide12" class="prev"></label>
-			<label for="slide13" class="next"></label>
-		</div>
-		
-		<div class="control13">
-			<label for="slide13" class="prev"></label>
-			<label for="slide14" class="next"></label>
-		</div>
-		
-		<div class="control14">
-			<label for="slide14" class="prev"></label>
-			<label for="slide01" class="next"></label>
-		</div>
-	</div>
-</div>
+	
+        
+     </div>
+      <div class="swiper-button-next">
+	  </div>
+      <div class="swiper-button-prev">
+	  </div>
+    </div>
+	
+<br>
+<br>	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<hr>
+	<div id="info"></div>
+
+	 <script>
+      var swiper = new Swiper(".form1", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+	<script>
+      var swiper = new Swiper(".form2", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+	<script>
+      var swiper = new Swiper(".form3", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+	
+	<script>
+      var swiper = new Swiper(".form4", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	
+	
+	
 
 
 
